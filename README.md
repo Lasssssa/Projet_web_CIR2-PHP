@@ -1,15 +1,24 @@
 # University management web application project - Project CIR2 - PHP Course
-
-Creator of this project : Théo Porodo / Mathis Meunier
  
 # Goal of the project 
 
-The aim of this project was to create a Pronote-type curriculum management web application.
-The web application consists of three parts: the administrator part, the teacher part and the student part.
-The administrator section lets you create, modify and delete teacher and student accounts. It also lets you manage curricula (cycles, years, semesters, courses, exams, etc.).
-The teacher section enables teachers to enter grades for their students, enter assessments and view summaries.
-The student section enables students to see their marks for the different tests in the different courses.
-For each section, an account information page is available.
+The aim of this project was to create a web-based audio streaming application.
+The overall idea is to recreate an application such as Spotify or Deezer.
+The following main functionalities are available:
+- Create an account / Login
+- Listen to music
+- Create a playlist / Add music to the playlist
+- Liker music
+- View history
+- Search for music (with filters based on year, singer, etc.)
+- Search for playlists, artists or albums
+- Have a profile page
+- Add friends and chat with them
+
+# Installation with Docker
+Unfortunately, this project has not been programmed with docker, so you need to set up your Linux machine.
+
+However, it's possible that a version with docker will be released one day.
 
 # Setup the linux machine
 
@@ -41,7 +50,7 @@ Change `peer` to `trust` on the lines `local all postgres` and `local all all`
 - `cd /var/www/html`
 - `sudo git clone https://github.com/Lasssssa/SCHOOL_MANAGEMENT_APP` 
 ### Update
-- `cd /var/www/html/PROJET_WEB_CIR2_PHP`
+- `cd /var/www/html/SCHOOL_MANAGEMENT_APP`
 - `sudo git pull https://github.com/Lasssssa/SCHOOL_MANAGEMENT_APP`
 
 # Create the database
@@ -59,7 +68,7 @@ Change `peer` to `trust` on the lines `local all postgres` and `local all all`
 - To fill the database, use the file `data.sql` which is in the dir `sql` 
 
 First move to that dir
-- `cd /var/www/html/PROJET_WEB_CIR2_PHP/sql`
+- `cd /var/www/html/SCHOOL_MANAGEMENT_APP/sql`
 
 Then execute the file using : 
 - `psql -d dbisen -U adminprojet -f model.sql`
@@ -79,5 +88,5 @@ Now your server is all setup and you can start the application
 ### Professor Part : 
 - To test the professor part : `proftest@gmail.com` with password : `mdp`
 
-## Repertory Github : 
+## Repository Github : 
 https://github.com/Lasssssa/SCHOOL_MANAGEMENT_APP
